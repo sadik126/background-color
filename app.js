@@ -12,7 +12,11 @@ window.onload = function load(params) {
 }
 
 function main(){
-
+ let root = document.getElementById('root');
+ let btn = document.getElementById('button')
+ btn.addEventListener('click',function(){
+     
+ })
 }
 
 function rgbcolor(){
@@ -20,4 +24,6 @@ function rgbcolor(){
     let blue =  Math.round(Math.random()*255);
 
     let green =  Math.round(Math.random()*255);
+
+    return `rgb(${red},${green},${blue})`;
 }
