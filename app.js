@@ -12,10 +12,12 @@ window.onload = function load(params) {
 }
 
 function main(){
- let root = document.getElementById('root');
+ let body = document.getElementById('body');
  let btn = document.getElementById('button')
  btn.addEventListener('click',function(){
-     
+     const bgcolor = rgbcolor();
+     body.style.backgroundColor = bgcolor;
+     body.style.color = 'red' 
  })
 }
 
